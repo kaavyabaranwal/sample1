@@ -1,0 +1,14 @@
+ compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 2.16 MiB | 2.63 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'kaavya' on GitHub by visiting:
+remote:      https://github.com/kaavyabaranwal/sample1/pull/new/kaavya
+remote:
+To https://github.com/kaavyabaranwal/sample1.git
+ * [new branch]      kaavya -> kaavya
+PS C:\Users\kaavy\KB's Folder\practice2> git checkout kaavya
+Already on 'kaavya'
+PS C:\Users\kaavy\KB's Folder\practice2> git branch main kaavya -f
+PS C:\Users\kaavy\KB's Folder\practic
