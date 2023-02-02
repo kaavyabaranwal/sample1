@@ -10,7 +10,7 @@
     --rodeo-dust: #caaf9e;
     --tide: #c0b7b4;
     --cold-turkey: #cfc0bd;
-    --beige : #f7f7f7;
+    --beige: #f7f7f7;
 }
 
 * {
@@ -116,12 +116,14 @@ a {
     color: #8e593e;
     text-align: center;
 }
-.heading h1{
+
+.heading h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
     line-height: 1.5;
     font-weight: 700;
 }
+
 .content .info {
     text-align: justify;
     line-height: 23px;
@@ -159,7 +161,7 @@ frame {
 
 /* work exp css */
 
-.work_exp{
+.work_exp {
     background-color: var(--beige);
 }
 
@@ -189,10 +191,11 @@ frame {
     margin: 40px auto;
     padding: 30px;
 }
+
 .card {
     box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1);
     /* max-width: 900px; */
-    width : 70vw;
+    width: 70vw;
     margin: auto;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -280,18 +283,26 @@ i:hover {
         font-size: 4rem;
     }
 
+    /* ABOUT MOBILE VIEW */
+
     .about {
         flex-direction: column;
+        height: auto;
     }
 
     .profile_img {
-        margin: 20px;
+        margin: 55px 20px 20px 20px;
     }
 
     .content {
         min-width: 90%;
         height: auto;
-        font-size: 13px;
+        font-size: 16px;
+    }
+
+    .content .info {
+        text-align: center;
+        line-height: 20px;
     }
 
     .content .socials ul {
@@ -300,18 +311,24 @@ i:hover {
         margin: 40px auto;
     }
 
+    .socials ul li {
+        margin: 7px 27px;
+    }
+
     /* WORK EXP MOBILE VIEW */
 
-    .service-bottom{
-        margin : 40px auto;
+    .service-bottom {
+        margin: 40px auto;
     }
-    .service-bottom .card{
-        width : 80vw;
-        height : auto;
-        margin : auto;
+
+    .service-bottom .card {
+        width: 80vw;
+        height: auto;
+        margin: auto;
     }
-    .card li{
-        line-height:20px;
-     
+
+    .card li {
+        line-height: 20px;
+
     }
 }
