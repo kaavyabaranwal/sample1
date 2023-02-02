@@ -10,6 +10,7 @@
     --rodeo-dust: #caaf9e;
     --tide: #c0b7b4;
     --cold-turkey: #cfc0bd;
+    --beige : #f7f7f7;
 }
 
 * {
@@ -72,7 +73,7 @@ a {
     margin-right: 7vw;
     margin-bottom: 1vh;
     font-weight: 500;
-    color: var(--athens-gray);
+    color: var(--beige);
 }
 
 .intro .main_name {
@@ -88,9 +89,6 @@ a {
     align-items: center;
 }
 
-.education {
-    height: 100vh;
-}
 
 .profile_img {
     display: flex;
@@ -118,7 +116,12 @@ a {
     color: #8e593e;
     text-align: center;
 }
-
+.heading h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
 .content .info {
     text-align: justify;
     line-height: 23px;
@@ -156,10 +159,13 @@ frame {
 
 /* work exp css */
 
+.work_exp{
+    background-color: var(--beige);
+}
+
 .service-top {
     text-align: center;
-    max-width: 500px;
-    display: inline;
+    max-width: 100%;
 }
 
 .service-top h1 {
@@ -167,6 +173,9 @@ frame {
     font-size: 2.5rem;
     line-height: 1.5;
     color: #8e593e;
+    font-weight: 700;
+    margin: 40px auto 0 auto;
+
 }
 
 .service-top p {
@@ -174,9 +183,16 @@ frame {
     color: #caaf9e;
 }
 
+.service-bottom {
+    text-align: center;
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 30px;
+}
 .card {
-    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
-    max-width: 900px;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1);
+    /* max-width: 900px; */
+    width : 70vw;
     margin: auto;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -184,16 +200,10 @@ frame {
     background-color: rgba(0, 0, 0, 0.03);
 }
 
-.service-bottom {
-    text-align: center;
-    max-width: 1500px;
-    margin: 50px;
-    padding: 50px;
-}
 
 .service-bottom h1 {
     font-size: 1.5rem;
-    color: #ab7d62;
+    color: #381a16;
 }
 
 .service-bottom h3 {
@@ -206,8 +216,15 @@ frame {
     color: #ab7d62;
 }
 
+
+.service-bottom ul {
+    list-style-type: disc;
+    margin: 10px auto;
+}
+
 .service-bottom li {
-    text-align: left;
+    text-align: center;
+    line-height: 10px;
     padding-bottom: 10px;
     color: #b39b8f;
 }
@@ -281,5 +298,20 @@ i:hover {
         display: grid;
         grid-template-columns: auto auto;
         margin: 40px auto;
+    }
+
+    /* WORK EXP MOBILE VIEW */
+
+    .service-bottom{
+        margin : 40px auto;
+    }
+    .service-bottom .card{
+        width : 80vw;
+        height : auto;
+        margin : auto;
+    }
+    .card li{
+        line-height:20px;
+     
     }
 }
