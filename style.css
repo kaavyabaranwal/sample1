@@ -269,7 +269,7 @@ i:hover {
     color: var(--muesli);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     .navbar .links {
         display: none;
     }
