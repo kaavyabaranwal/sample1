@@ -11,6 +11,7 @@
     --tide: #c0b7b4;
     --cold-turkey: #cfc0bd;
     --beige: #f7f7f7;
+    --deep-gray: rgb(59, 59, 59);
 }
 
 * {
@@ -60,6 +61,10 @@ a {
     color: white;
 }
 
+.links ul li a:hover {
+    color: var(--muesli);
+}
+
 .intro {
     height: 90vh;
     display: flex;
@@ -95,12 +100,13 @@ a {
     justify-content: center;
     align-items: center;
     margin-left: 11vw;
-    border: 9px solid #8e593e;
+    border: 9px solid var(--potters-clay);
 }
 
 .profile_img img {
-    border: 6px solid #eeecf1;
+    border: 6px solid var(--athens-gray);
 }
+
 
 .content {
     height: 25vh;
@@ -113,7 +119,7 @@ a {
 }
 
 .content .heading {
-    color: #8e593e;
+    color: var(--potters-clay);
     text-align: center;
 }
 
@@ -127,6 +133,7 @@ a {
 .content .info {
     text-align: justify;
     line-height: 23px;
+    font-size: 20px;
 }
 
 .content .socials ul {
@@ -135,12 +142,12 @@ a {
 }
 
 .socials a {
-    color: #3e3e3e;
+    color: var(--deep-gray);
     font-weight: 600;
 }
 
 .socials a:hover {
-    color: #ab7d62;
+    color: var(--muesli);
 }
 
 .socials ul li {
@@ -174,7 +181,7 @@ frame {
     font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
     line-height: 1.5;
-    color: #8e593e;
+    color: var(--potters-clay);
     font-weight: 700;
     margin: 40px auto 0 auto;
 
@@ -182,7 +189,7 @@ frame {
 
 .service-top p {
     font-size: 20px;
-    color: #caaf9e;
+    color: var(--rodeo-dust);
 }
 
 .service-bottom {
@@ -201,22 +208,23 @@ frame {
     font-family: "Montserrat", sans-serif;
     padding-top: 20px;
     background-color: rgba(0, 0, 0, 0.03);
+    height: auto;
 }
 
 
 .service-bottom h1 {
     font-size: 1.5rem;
-    color: #381a16;
+    color: var(--tamarind);
 }
 
 .service-bottom h3 {
     font-style: italic;
-    color: #ab7d62;
+    color: var(--muesli);
 }
 
 .service-bottom p {
     font-size: 15px;
-    color: #ab7d62;
+    color: var(--muesli);
 }
 
 
@@ -229,7 +237,86 @@ frame {
     text-align: center;
     line-height: 10px;
     padding-bottom: 10px;
-    color: #b39b8f;
+    color: var(--thatch);
+}
+
+/*PROJECTS CSS*/
+
+.projects {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--tamarind);
+    background-color: var(--athens-gray);
+}
+
+.projects h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--potters-clay);
+    font-weight: 700;
+    margin: 40px auto 0 auto;
+}
+
+.projects p {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    background: var(--beige);
+}
+
+.card1 img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card1 .work-content {
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 1rem;
+    color: var(--tamarind);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.card1 .work-info {
+    color: var(--muesli);
+    margin: 10px;
+    text-align: center;
+    font-size: 14px;
+    height: auto;
+
+}
+
+.card1 .work-content:hover {
+    color: var(--tide);
+}
+
+.card1:hover {
+    box-shadow: 0 0 1.5rem gray;
 }
 
 
@@ -237,7 +324,7 @@ frame {
 
 .footer {
     height: 130px;
-    background: var(--athens-gray);
+    background: var(--beige);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -258,17 +345,20 @@ i:hover {
 
 .designer,
 .copyright {
-    color: rgb(59, 59, 59);
+    color: var(--deep-gray);
 }
 
 .designer a {
-    color: rgb(59, 59, 59);
+    color: var(--deep-gray);
 }
 
 .designer a:hover {
     color: var(--muesli);
 }
 
+
+
+/* media queries for responsiveness */
 @media screen and (max-width: 1080px) {
     .navbar .links {
         display: none;
@@ -303,6 +393,7 @@ i:hover {
     .content .info {
         text-align: center;
         line-height: 20px;
+        font-size: 16px;
     }
 
     .content .socials ul {
@@ -331,82 +422,15 @@ i:hover {
         line-height: 20px;
 
     }
+
+
+    /* PROJECTS SECTION MOBILE VIEW */
+
+    .work {
+        grid-template-columns: auto;
+    }
+
+    .card1 {
+        width: 90%;
+    }
 }
-
-/*PROJECTS CSS*/
-
-#projects{
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  	justify-content: center;
-	text-align:center;
-	color: #381a16;
-	background-color: var(--beige);
-}
-
-#projects h3{
-	font-family: "Montserrat", sans-serif;
-	font-size: 2.5rem;
-    	line-height: 1.5;
-    	color: #8e593e;
-    	font-weight: 700;
-    	margin: 40px auto 0 auto;
-}
-
-#projects p{
-	font-size:1.2rem;
-	padding: 10px;
-  	font-family: Montserrat, sans-serif;
-  	text-decoration: none;
-}
-
-.work{
-	display: flex; 
-	flex: 1;
-    	flex-wrap: wrap;
-  	justify-content:center;
-	align-items: center;
-	padding: 20px;
-  	font-family: Montserrat, sans-serif;
-}
-
-.card1{
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	width: 200px;
-	height:250px;
-	border-radius:12px;
-    	background:var(--athens-gray);
-}
-
-.card1 img{
-	width: 100%;
-	height:70%;
-	border-radius:10px 10px 0px 0px;
-}
-
-.card1 .work-content{
-	text-align: center;
-	padding: 10px 5px;
-	font-size: 1rem;
-	color: #381a16;
-	cursor: pointer;
-  	font-family: Montserrat, sans-serif;
-  	text-decoration: none;
-}
-
-.card1 a{
-	text-decoration: none;
-}
-
-.card1 .work-content:hover{
-    color:#c0b7b4;
-}
-
-.card1:hover{
-	box-shadow: 0 0 1.5rem gray;
-}
-
