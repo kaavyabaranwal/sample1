@@ -21,6 +21,10 @@
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .home {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("images/jess-bailey-q10VITrVYUM-unsplash.jpg");
@@ -183,7 +187,7 @@ frame {
     line-height: 1.5;
     color: var(--potters-clay);
     font-weight: 700;
-    margin: 40px auto 0 auto;
+    margin: 10vh auto 0 auto;
 
 }
 
@@ -259,7 +263,7 @@ frame {
     line-height: 1.5;
     color: var(--potters-clay);
     font-weight: 700;
-    margin: 40px auto 0 auto;
+    margin: 10vh auto 0 auto;
 }
 
 .projects p {
