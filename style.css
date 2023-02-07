@@ -426,6 +426,9 @@ i:hover {
         line-height: 20px;
 
     }
+    .projects h1, .service-top h1{
+        margin : 5vh auto 0 auto;
+    }
 
 
     /* PROJECTS SECTION MOBILE VIEW */
